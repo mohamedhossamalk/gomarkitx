@@ -1,0 +1,45 @@
+
+    /* الحاوية الرئيسية */
+    .icon-slider {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        background-color: #8645ff;
+        padding: 10px 0;
+    }
+  
+    /* الشريط الذي يحتوي الأيقونات */
+    .icon-track {
+        display: flex;
+        gap: 0;
+        animation: scroll 10s linear infinite;
+        width: max-content;
+    }
+  
+    /* الأيقونات */
+    .icon-track img {
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+    }
+  
+    /* الحركة */
+    @keyframes scroll {
+        from {
+            transform: translateX(65%);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+  
+     
+    @media (max-width: 768px) {
+        .icon-track img {
+            width: 40px;
+            height: 40px;
+        }
+    } 
+
+  
